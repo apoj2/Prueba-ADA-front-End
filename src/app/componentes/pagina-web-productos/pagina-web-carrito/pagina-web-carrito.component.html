@@ -1,0 +1,64 @@
+
+<section>
+    <div class="seccion-producto-categoria">
+        
+
+        <div class="seccion-producto-categoria-div-1">
+            <div class="seccion-producto-categoria-div-2">
+                <div class="container">
+                    <div class="column" *ngFor="let producto of datosCarrito |paginate : {itemsPerPage :10, currentPage :page}" >
+                            <!-- <div class="column-img">
+                                <img src="{{producto.nombre}}" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="column-nombre">  
+                                 {{producto.nombre}}         
+                            </div>         
+                            <div class="d-flex">
+                                <div class="column-nuevo">  
+                                    Nuevo Producto         
+                               </div> 
+                               <div class="ms-auto pt-2" >
+                                   {{producto.precio}}
+                               </div>
+                            </div>    -->
+                            <div class="column-tarjeta">
+                                <div class="tarjeta-imagen">
+                                    <img src="{{producto.foto_descripcion}}" class="img-fluid w-100" alt="">
+                                </div>
+                                <div class="tarjeta-descripcion w-100 ms-auto">
+                                    <div class="d-flex w-100 ms-auto">
+                                        <div class="ms-auto">
+                                            <div class="p-3">
+                                                Nombre:
+                                                {{producto.producto_nombre}}
+                                            </div>
+                                            <div class="p-3" >
+                                                Precio:
+                                                {{producto.producto_precio}}
+                                            </div>
+                                        </div>
+                                        <div class="p-3">
+                                            <button type="button" class="bi bi-x-circle bg-danger btn btn-danger" (click)="eliminarDeCarrito(producto.producto_nombre)"></button>
+                                        </div>
+                                        {{total}}
+                                    </div>
+                                </div>
+                            </div>    
+                    </div>
+                </div>
+                  
+                <div class="d-flex justify-content-center">
+                    <pagination-controls
+                        previousLabel=""
+                        nextLabel=""
+                        (pageChange)="page = $event"
+                        class ="pagination-control"
+                    >
+                    </pagination-controls>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</section>

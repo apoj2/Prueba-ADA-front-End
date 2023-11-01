@@ -1,0 +1,11 @@
+.contenedor-usuario{
+    width: 100%;
+    text-align: center;
+}
+.usuario-tabla{
+    width: 100%;
+}
+.usuario-formulario{
+    width: 100%;
+    padding-left: 25%;
+}

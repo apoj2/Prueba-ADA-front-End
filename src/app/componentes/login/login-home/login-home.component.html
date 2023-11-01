@@ -1,0 +1,41 @@
+<section>
+    <div class=" bg-white ">
+        
+        <form class="w-100 my-5" [formGroup]="formulario" (ngSubmit)="analizarFormulario()" >
+
+            <div class="px-5">
+                <h3>Bienvenido a ADA producto</h3>
+                <hr>
+            </div>    
+            <div class="row row-12 row-md-12 w-100 login">
+       
+                <div class="col col-6 col-md-6 shadow p-5"> 
+                    <h2 class="text-center py-5">Inicio de sesion</h2>
+                    <div class="mb-3">
+                        <label class="form-label">Usuario: </label>
+                        <input type="text" class="form-control" placeholder="Usuario" formControlName="apodo">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Contraseña: </label>
+                        <input type="text" class="form-control" placeholder="Contraseña" formControlName="contrasena">
+                    </div>
+                    <button type="submit" class="btn btn-warning w-100">Registrar</button>
+                </div>
+            </div>
+        
+        
+        
+            <!-- <div class="mb-3 mt-5">
+                <h4>Ubicación en cuarto: </h4>
+                <hr>
+                <select class="form-select" *ngIf="controlDeZona" formControlName="zona">
+                    <option value={{zona.id}} *ngFor="let zona of datosZonas">{{zona.nombre}}</option>
+        
+                </select>
+            </div> -->
+        
+            
+        
+        </form>
+    </div>
+</section>

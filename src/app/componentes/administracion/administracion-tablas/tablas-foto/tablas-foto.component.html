@@ -1,0 +1,24 @@
+<table class="table table-hover border bg-white" >
+    <thead class="bg-success text-white">
+      <tr>
+        <th scope="col">Ruta</th>
+        <th scope="col">Estado</th>
+        <th scope="col">Fecha Activacion</th>
+        <th scope="col">Fecha Modificacion</th>
+        <th scope="col">Fecha Inactivacion</th>
+        <th scope="col">Usuario</th>
+        <th scope="col">Id Producto</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let foto of datosFoto">
+      <tr>
+        <td>{{foto.descripcion.slice(0,30)}}</td>
+        <td>{{foto.estado}}</td>
+        <td>{{foto.fecha_activacion}}</td>
+        <td>{{foto.fecha_modificacion}}</td>
+        <td>{{foto.fecha_inactivacion}}</td>
+        <td>{{foto.usuario}}</td>
+        <td>{{foto.idproducto}}</td>
+      </tr>
+    </tbody>
+  </table>

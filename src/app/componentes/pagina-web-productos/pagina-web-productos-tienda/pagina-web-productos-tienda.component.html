@@ -1,0 +1,56 @@
+<section>
+    <div class="seccion-publicidad">
+       <strong>TIENDA</strong> <p>Somos lo que necesitas, mas que un producto somos la necesidad de cada cliente</p>
+    </div>
+    <div class="seccion-producto-categoria">
+        
+
+        <div class="seccion-producto-categoria-div-1">
+            <button class="btn btn-primary ms-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Filtros</button>
+
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasTopLabel">FILTROS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+            <div class="offcanvas-body">
+            
+        </div>
+    </div>
+            <div class="seccion-producto-categoria-div-2">
+                <div class="container" >
+                    <div   class="column"  *ngFor="let producto of datosProductos |paginate : {itemsPerPage :24, currentPage :page}" >
+                            <div (click)="tomarNombreProducto(producto.producto_nombre)">
+                                <div class="column-img">
+                                    <img src="{{producto.foto_descripcion}}" class="img-fluid w-100" alt="">
+                                </div>
+                                <div class="column-nombre">  
+                                     {{producto.producto_nombre}}         
+                                </div>         
+                                <div class="d-flex">
+                                    <div class="column-nuevo">  
+                                        Nuevo Producto         
+                                   </div> 
+                                   <div class="ms-auto" (click)="tomarIdCarrito(producto.producto_nombre)">
+                                        <i class="bi bi-basket"></i>
+                                   </div>
+                                </div> 
+                            </div>      
+                    </div>
+                </div>
+                  
+                <div class="d-flex justify-content-center">
+                    <pagination-controls
+                        previousLabel=""
+                        nextLabel=""
+                        (pageChange)="page = $event"
+                        class ="pagination-control"
+                    >
+                    </pagination-controls>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</section>

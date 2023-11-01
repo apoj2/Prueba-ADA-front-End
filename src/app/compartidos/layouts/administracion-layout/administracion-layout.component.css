@@ -1,0 +1,13 @@
+main{
+    background-color: #f6f6f6;
+}
+.contenedor-layout{
+    text-align: center;
+}
+.layout-principal{
+    text-align: center;
+    justify-content: center;
+}
+.cursor{
+    cursor: pointer;
+}

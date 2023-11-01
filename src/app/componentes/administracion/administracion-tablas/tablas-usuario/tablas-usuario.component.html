@@ -1,0 +1,34 @@
+<table class="table table-hover border bg-white" >
+  <thead class="bg-success text-white">
+    <tr>
+      <th scope="col">Apodo</th>
+      <th scope="col">Nombre Completo</th>
+      <th scope="col">Correo Electronico</th>
+      <th scope="col">Telefono</th>
+      <th scope="col">Celular</th>
+      <th scope="col">Direccion</th>
+      <th scope="col">Estado</th>
+      <th scope="col">Fecha Activacion</th>
+      <th scope="col">Fecha Modificacion</th>
+      <th scope="col">Fecha Inactivacion</th>
+      <th scope="col">Usuario</th>
+      <th scope="col">Id Rol Usuario</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let foto of datosUsuario">
+    <tr>
+      <td>{{foto.apodo}}</td>
+      <td>{{foto.nombre_completo}}</td>
+      <td>{{foto.correo_electronico}}</td>
+      <td>{{foto.telefono}}</td>
+      <td>{{foto.celular}}</td>
+      <td>{{foto.direccion}}</td>
+      <td>{{foto.estado}}</td>
+      <td>{{foto.fecha_activacion}}</td>
+      <td>{{foto.fecha_modificacion}}</td>
+      <td>{{foto.fecha_inactivacion}}</td>
+      <td>{{foto.usuario}}</td>
+      <td>{{foto.idrolusuario}}</td>
+    </tr>
+  </tbody>
+</table>

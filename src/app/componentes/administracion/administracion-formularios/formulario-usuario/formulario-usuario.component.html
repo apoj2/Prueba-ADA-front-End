@@ -1,0 +1,132 @@
+<section class="">
+    <div class="shadow bg-white ">
+        
+        <form class="w-100 my-5" [formGroup]="formulario" (ngSubmit)="analizarFormulario()" >
+
+            <div class="px-5">
+                <h3>Administracion Usuario</h3>
+                <hr>
+            </div>    
+            <div class="row">
+                <div class="col col-12 col-md-12 px-5">
+
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-key"></i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Apodo" formControlName="apodo">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-person-circle"></i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Nombre Completo" formControlName="nombre_completo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-envelope"></i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Correo Electronico" formControlName="correo_electronico">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-house"></i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Direccion" formControlName="direccion">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-telephone"></i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Telefono" formControlName="telefono">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-phone"></i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Celular" formControlName="celular">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Id Rol Usuario: </label>
+                        <input type="number" class="form-control" placeholder="Id Rol Usuario" formControlName="idrolusuario">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Estado: </label>
+                         <select class="form-select form-select-sm" formControlName="estado">
+                            <option value="A">A</option>
+                            <option value="I">I</option>
+                          </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Fecha Activacion: </label>
+                        <input type="text" class="form-control" placeholder="Fecha Activacion" formControlName="fecha_activacion">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Fecha Modificacion: </label>
+                        <input type="text" class="form-control" placeholder="Fecha Modificacion" formControlName="fecha_modificacion">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Fecha Inactivacion: </label>
+                        <input type="text" class="form-control" placeholder="Fecha Inactivacion" formControlName="fecha_inactivacion">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Usuario: </label>
+                        <input type="text" class="form-control" placeholder="Usuario" formControlName="usuario">
+                    </div>
+                  
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-key"></i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Contraseña" formControlName="contrasena">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+        
+            <!-- <div class="mb-3 mt-5">
+                <h4>Ubicación en cuarto: </h4>
+                <hr>
+                <select class="form-select" *ngIf="controlDeZona" formControlName="zona">
+                    <option value={{zona.id}} *ngFor="let zona of datosZonas">{{zona.nombre}}</option>
+        
+                </select>
+            </div> -->
+        
+            <button type="submit" class="btn btn-warning w-100">Registrar</button>
+        
+        </form>
+    </div>
+</section>

@@ -1,0 +1,33 @@
+<main>
+    <div>
+        <div>
+            <app-administracion-encabezado></app-administracion-encabezado>
+        </div>
+        <div class="row row-12 row-md-12 w-100 d-flex vh-100">
+            <div class="layout-panel col-2 bg-dark ">
+                <ul class="text-white list-group">
+                    <li class="list-item cursor p-3" routerLink="adminproducto">
+                        Producto Panel
+                    </li>
+                    <li class="list-item cursor p-3" routerLink="adminfoto">
+                        Foto Panel
+                    </li>
+                    <li class="list-item cursor p-3" routerLink="adminusuario">
+                        Usuario Panel
+                    </li>
+                    <li class="list-item cursor p-3" routerLink="adminrolusuario">
+                        Rol Usuario Panel
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="layout-principal col-8" >
+                <div class="row row-12 row-md-12 ">
+                    <div class="col col-12 col-md-12" >
+                        <router-outlet></router-outlet>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

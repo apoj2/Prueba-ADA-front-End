@@ -1,0 +1,78 @@
+<section>
+    <div class="seccion-ruta-pagina">
+            <!-- Producto \ {{this.productoObjeto.nombreCategoria}} \ {{this.productoObjeto.nombre}} -->
+    </div>
+    <div class="seccion-pagina-producto">
+        <div class="seccion-pagina-producto-div">
+            <div class="seccion-pagina-producto-div-detalles" id="detalles">
+                <div class="seccion-pagina-producto-div-detalles-imagen">
+                    <img src="{{this.productoObjeto.foto_descripcion}}" class="seccion-pagina-producto-div-detalles-imagen-img" alt="">
+                </div>
+                <div class="seccion-pagina-producto-div-detalles-descripcion">
+                    <h4 class="mx-4">Detalles</h4>
+                    <div class="seccion-pagina-producto-div-detalles-descripcion-descripciones">
+                        <!-- <div class="mx-5 my-2">
+                            <h5>Nombre</h5>
+                            {{this.ProductoObjeto.nombre}}
+                        </div> -->
+                        <div class="mx-5 my-2">
+                            <h5>Categoria</h5>
+                        </div>
+                        <div class="mx-5 my-2">
+                            <h5>Estado</h5>
+                            <p>Nuevo</p>
+                        </div>
+                        <div class="mx-5 my-2">
+                            <h5>Numero Contacto</h5>
+                        </div>
+                    </div>
+                    <hr class="mx-3">
+                    <div class="m-4">
+                        <h4>Descripcion</h4>
+                        <p>{{this.productoObjeto.producto_descripcion}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="seccion-pagina-producto-div-1">
+            <div class="seccion-pagina-producto-div-1-precio">
+                <div>
+                    <div class="seccion-pagina-producto-div-1-vendedor">
+                        <!-- <h1 class="mx-5 my-3"><p>${{this.ProductoObjeto.precio}}</p></h1>
+                        <p class="mx-5 my-4 seccion-pagina-producto-div-1-precio-carrito-boton"><i class="bi bi-cart4"></i></p> -->
+                        <div class="d-flex">
+
+                            <div class="mx-2">
+                                <div class="mx-5 my-2">
+                                    <h5>Nombre</h5>
+                                    {{this.productoObjeto.producto_nombre}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="seccion-pagina-producto-div-1-vendedor-boton">
+                            chatee con el vendedor
+                        </div>
+                       
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="seccion-pagina-producto-div-1-mapa">
+                <!-- <div>
+                    <img src="" alt="">
+                    foto
+                    <div>
+                        nombre vendedor
+                    </div>
+                </div>
+                <div class="seccion-pagina-producto-div-1-vendedor-boton">
+                    chatee con el vendedor
+                </div> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.6881046482554!2d-75.55825628573406!3d6.304647327419141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442f171559ef81%3A0x81add99922fd153a!2sSISDECAR!5e0!3m2!1sen!2sco!4v1657316525570!5m2!1sen!2sco" class="d-flex justify-content-center mapa" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="seccion-pagina-producto-div-1-ubicacion m-2">
+                    publicado en ....
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
